@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id" class="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UD. Amanah - Solusi Kantor & Sekolah</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50", // Navy
+              accent: "#27AE60", // Green
+              "accent-hover": "#219150",
+              "background-light": "#f7f7f7",
+              "background-off": "#F9FAFB",
+              navy: "#2C3E50",
+              surface: "#FFFFFF"
+            },
+            fontFamily: {
+              sans: ['Inter', 'Plus Jakarta Sans', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="Mid-client-UvjawVGq9CODd4Cp"></script>
+    
+    <style>
+        .animate-fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .modal-overlay { 
+            position: fixed; inset: 0; background: rgba(0,0,0,0.5); 
+            z-index: 100; display: none; align-items: center; justify-content: center; 
+            backdrop-filter: blur(4px); 
+        }
+        .modal-overlay.active { display: flex; }
+        
+        /* Hide Scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background-light text-primary font-sans antialiased min-h-screen flex flex-col">
+    
+    <div id="app-root" class="flex flex-col min-h-screen"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
